@@ -1,1 +1,1 @@
-#A simple responsive landing page written with HTMK and CSS
+#A simple responsive landing page written with HTML and CSS
