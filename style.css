@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.hero {
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
+}
+.hero-container {
+    text-align: center;
+    padding: 2rem;
+}
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.hero-logo {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    width: 100px;
+}
+.hero-title {
+    margin-bottom: 1rem;
+}
+.hero-paragraph {
+    margin-bottom: 2.8rem;
+    max-width: 550px;
+    margin: auto;
+
+}
+.cta {
+    margin-bottom: 1.3rem;
+    position: relative;
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: green;
+    border-radius: 40px;
+    font-weight: 600;
+    color: rgba(159, 171, 178, 0.95);
+
+}
+.ios-cta {
+    color: white;
+    background-color: #26baa4;
+    box-shadow: 0 4px 12px rgba(38, 186, 164, 0.6);
+}
+
+.mac-cta {
+    color: white;
+    background-color: #6173ff;
+    box-shadow: 0 4px 12px rgba(97, 115, 255, 0.6);
+}
+
+.section {
+    padding: 4rem 0 1rem;
+}
+.section-title, .section-subtitle  {
+    text-align: center;
+}
+.section-title {
+    margin-bottom: 1rem;
+}
+.container {
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.container .top {
+    padding-bottom: 3rem;
+}
+.computer-img {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.computer-texts {
+    text-align: center;
+    margin-top: 2.8rem;
+    padding: .5rem;
+}
+.computer-text {
+    margin-bottom: 2rem;
+}
+.computer-text .text-title {
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+}
+.access-image {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.workflow-items {
+    text-align: center;
+    margin-top: 6rem;
+}
+.workflow-item {
+    margin-bottom: 3rem;
+}
+.workflow-img {
+    margin-bottom: 2rem;
+}
+.workflow-title {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+.logo-container {
+    text-align: center;
+}
+.logo-container .logo {
+    margin-bottom: 3.2rem;
+}
+.logo-container .logo-img {
+    width: 115px;
+}
+.logo-container  .ibm {
+    margin-left: .5rem;
+    width: 100px;
+}
+.clipboard-container {
+    padding: 0 2.5rem;
+    padding-bottom: 8rem;
+}
+.footer {
+    background-color: rgba(159, 171, 178, 0.1);
+    padding-top: 3rem;
+    padding-bottom: .5rem;
+}
+.footer-container {
+    text-align: center;
+}
+.footer-logo {
+    width: 45px;
+    margin-bottom: 1.5rem;
+}
+.footer-links {
+    margin-bottom: 1.5rem;
+}
+.footer-links ul li {
+    margin-bottom: 1.1rem;
+}
+.footer-links ul li a {
+    color:hsl(210, 10%, 33%);
+    transition: .4s;
+}
+.footer-links ul li a:hover {
+    color: hsl(171, 66%, 44%);
+}
+.section-subtitle, .workflow-text, .text-paragraph, .hero-paragraph {
+    color: rgba(159, 171, 178, 0.95);
+}
+.section-title, .hero-title, .text-title, .workflow-title{
+    color:hsl(210, 10%, 33%);
+}
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 2rem auto;
+}
+.social-icons .social-icon {
+    font-size: 1.5rem;
+    color:hsl(210, 10%, 33%);
+    cursor: pointer;
+    transition: .4s;
+}
+.social-icons .social-icon:hover {
+    color: hsl(171, 66%, 44%);
+}
+.section-subtitle {
+    max-width: 550px;
+    margin: auto;
+}
+
+@media only screen and (min-width:768px) {
+    .hero {
+        background-image: url(./images/bg-header-desktop.png);
+        height: 450px;
+    }
+    .hero-cta {
+        flex-direction: row;
+        max-width: 400px;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cta {
+        padding: 10px 25px;
+        margin-right: 1rem;
+    }
+    .snippets-container .bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .snippets-container {
+        padding: 0;
+    }
+    .snippets-container .bottom .computer-texts {
+        align-self: center;
+        margin-top: 0;
+    }
+    .snippets-container .bottom .computer-text {
+        text-align: left;
+        max-width: 350px;
+    }
+    .snippets-container .bottom .computer-img {
+        transform: translateX(-2vw);
+    }
+    .work-flow-container .workflow-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+    .work-flow-container .workflow-items .workflow-item:nth-child(1) {
+        margin-top: -.7rem;
+    }
+    .logo-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding-bottom: 3rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .access-image {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-container {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        column-gap: 5%;
+        max-width: 1200px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .footer-container .col-2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer-container .footer-links ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 4rem;
+    }
+    .social-icons {
+        width: 100px;
+        margin: 0;
+        align-content: center;
+        margin-top: 1rem;
+    }
+    .snippets-container {
+        padding-top: 2rem;
+    }
+    .section-title {
+        font-size: 1.7rem;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .snippets-container .bottom {
+        column-gap: 3rem;
+    }
+
+}
